@@ -1,0 +1,113 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f9f9f9;
+  margin: 20px;
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  color: #2c3e50;
+  font-weight: 700;
+}
+
+#filtroNome {
+  display: block;
+  margin: 0 auto 20px auto;
+  padding: 10px 15px;
+  width: 320px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+#filtroNome:focus {
+  outline: none;
+  border-color: #3498db;
+  box-shadow: 0 0 5px rgba(52, 152, 219, 0.5);
+}
+
+#btnLimpar {
+  display: block;
+  margin: 0 auto 30px auto;
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#btnLimpar:hover {
+  background-color: #c0392b;
+}
+
+.cards-container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 20px;
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.card img {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 15px;
+  border: 3px solid #3498db;
+}
+
+.card h3 {
+  margin: 10px 0 8px;
+  font-size: 1.4em;
+  color: #2c3e50;
+}
+
+.card p {
+  font-size: 0.9em;
+  color: #555;
+  margin: 4px 0;
+  line-height: 1.3;
+}
+.card {
+  position: relative; 
+  border: 1px solid #ccc;
+  padding: 12px;
+  margin: 8px;
+  width: 400px;
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.card .btn-excluir {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: #e74c3c;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  font-size: 12px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.card .btn-excluir:hover {
+  background: #c0392b;
+}
